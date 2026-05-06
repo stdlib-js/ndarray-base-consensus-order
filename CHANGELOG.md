@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`55d22b7`](https://github.com/stdlib-js/stdlib/commit/55d22b7372bc9308ceeee70d202599d8a6897eef) - **docs:** fix description _(by Athan Reines)_
 -   [`b3ec3d3`](https://github.com/stdlib-js/stdlib/commit/b3ec3d3993be5ae78e6da79502d2cabc9eadb2ad) - **feat:** add `ndarray/base/consensus-order` _(by Athan Reines)_
 
 </details>
