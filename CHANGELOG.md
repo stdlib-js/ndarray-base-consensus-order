@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-14)
+## Unreleased (2026-07-21)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`92c748d`](https://github.com/stdlib-js/stdlib/commit/92c748dac8ce3ad80070d5999c579a176348ea02) - **chore:** clean-up [(#13603)](https://github.com/stdlib-js/stdlib/pull/13603) _(by Philipp Burckhardt)_
 -   [`2993e90`](https://github.com/stdlib-js/stdlib/commit/2993e90541c0e9dca7201e822668c8ca026771f1) - **chore:** follow-up fixes [(#11966)](https://github.com/stdlib-js/stdlib/pull/11966) _(by Philipp Burckhardt)_
 -   [`31c91e5`](https://github.com/stdlib-js/stdlib/commit/31c91e5a0dc350a5c871d05e609340133413f36d) - **refactor:** simplify branching to optimize most common path _(by Athan Reines)_
 -   [`ca19780`](https://github.com/stdlib-js/stdlib/commit/ca197805be0fc683e455e6beec112efa69297496) - **test:** add tests _(by Athan Reines)_
