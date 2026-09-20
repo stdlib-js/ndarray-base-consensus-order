@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,51 +16,50 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ArrayLike, Collection } from '@stdlib/types/array';
+import { Order } from '@stdlib/types/ndarray';
 
 /**
-* Resolve the most common underlying storage layout.
+* Resolves the most common underlying storage layout.
 *
-* @module @stdlib/ndarray-base-consensus-order
+* ## Notes
+*
+* -   In the event of a tie or when all input array strides are "disorganized" (i.e., neither row- nor column-major), the function returns the default layout.
+*
+* @param strides - list of array strides
+* @returns storage layout
 *
 * @example
-* var consensusOrder = require( '@stdlib/ndarray-base-consensus-order' );
-*
 * var strides = [ [ 2, 1 ], [ 4, 1 ] ];
 *
 * var order = consensusOrder( strides );
 * // returns 'row-major'
 *
 * @example
-* var consensusOrder = require( '@stdlib/ndarray-base-consensus-order' );
-*
 * var strides = [ [ 1, 2 ], [ 1, 4 ] ];
 *
 * var order = consensusOrder( strides );
 * // returns 'column-major'
 *
 * @example
-* var consensusOrder = require( '@stdlib/ndarray-base-consensus-order' );
-*
 * var strides = [ [ 2, 1 ], [ 1, 4 ] ];
 *
 * var order = consensusOrder( strides );
 * // returns <string>
 *
 * @example
-* var consensusOrder = require( '@stdlib/ndarray-base-consensus-order' );
-*
 * var strides = [ [ 1, 1 ], [ 1, 1 ] ];
 *
 * var order = consensusOrder( strides );
 * // returns <string>
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function consensusOrder( strides: ArrayLike<Collection<number>> ): Order;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = consensusOrder;
